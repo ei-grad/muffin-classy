@@ -165,9 +165,6 @@ html_static_path = ['_static']
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'FlaskClassydoc'
-sys.path.append(os.path.abspath('_themes'))
-html_theme_path = ['_themes']
-html_theme = 'flask'
 
 # -- Options for LaTeX output --------------------------------------------------
 
