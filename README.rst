@@ -552,4 +552,5 @@ API
 ----
 
 © Copyright 2013 by Freedom Dumlao, `Follow Me @apiguy <https://twitter.com/APIguy>`_
+
 © Copyright 2015 by Andrew Grigorev, `Follow Me @eigrad <https://twitter.com/eigrad>`_
