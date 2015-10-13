@@ -34,7 +34,7 @@ pip-log.txt
 
 # Distribution
 dist/*
-Flask_Classy.egg-info/*
+Muffin_Classy.egg-info/*
 
 # Mac stuff
 .DS_Store
@@ -47,3 +47,6 @@ docs/_build*
 *.ipr
 *.iws
 .idea/
+
+*.log
+.cache

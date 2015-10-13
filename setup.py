@@ -1,26 +1,26 @@
 """
-Flask-Classy
+Muffin-Classy
 -------------
 
-Class based views for Flask
+Class based views for Muffin
 """
 from setuptools import setup
 
 setup(
-    name='Flask-Classy',
+    name='Muffin-Classy',
     version='0.7.0-dev0',
-    url='https://github.com/apiguy/flask-classy',
+    url='https://github.com/apiguy/muffin-classy',
     license='BSD',
     author='Freedom Dumlao',
     author_email='freedomdumlao@gmail.com',
-    description='Class based views for Flask',
+    description='Class based views for Muffin',
     long_description=__doc__,
-    py_modules=['flask_classy'],
+    py_modules=['muffin_classy'],
     zip_safe=False,
     include_package_data=True,
     platforms='any',
     install_requires=[
-        'Flask>=0.9'
+        'Muffin>=0.9'
     ],
     classifiers=[
         'Environment :: Web Environment',
