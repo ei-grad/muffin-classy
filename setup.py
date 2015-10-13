@@ -8,11 +8,11 @@ from setuptools import setup
 
 setup(
     name='Muffin-Classy',
-    version='0.7.0-dev0',
-    url='https://github.com/apiguy/muffin-classy',
+    version='0.0.0-0',
+    url='https://github.com/ei-grad/muffin-classy',
     license='BSD',
-    author='Freedom Dumlao',
-    author_email='freedomdumlao@gmail.com',
+    author='Andrew Grigorev',
+    author_email='andrew@ei-grad.ru',
     description='Class based views for Muffin',
     long_description=__doc__,
     py_modules=['muffin_classy'],
@@ -20,7 +20,7 @@ setup(
     include_package_data=True,
     platforms='any',
     install_requires=[
-        'Muffin>=0.9'
+        'aiohttp'
     ],
     classifiers=[
         'Environment :: Web Environment',
@@ -28,13 +28,9 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.5',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
-    test_suite='test_classy'
+    test_suite='tests'
 )
