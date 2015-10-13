@@ -22,9 +22,9 @@ logger = logging.getLogger(__name__)
 
 def route(path=None, methods=None, name=None):
     def decorator(func):
-        if not hasattr(func, '_muffinview'):
-            func._muffinview = []
-        func._muffinview.append({
+        if not hasattr(func, '_classy'):
+            func._classy = []
+        func._classy.append({
             'path': path,
             'methods': methods,
             'name': name,
@@ -91,7 +91,7 @@ class BaseView(object):
 
         for method_name, value in members:
             handler = cls._proxy_method_factory(method_name)
-            opts_list = getattr(value, '_muffinview', [{}])
+            opts_list = getattr(value, '_classy', [{}])
             for opts in opts_list:
                 _register(opts)
 
@@ -113,7 +113,7 @@ class BaseView(object):
         @functools.wraps(view)
         def proxy(request, *args, **kwargs):
 
-            request.muffinview_method_name = name
+            request.classy_method_name = name
 
             if hasattr(self, "before_request"):
                 response = self.before_request(request)
