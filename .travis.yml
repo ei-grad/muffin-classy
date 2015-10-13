@@ -6,7 +6,9 @@ install:
 - pip install -r requirements-tests.txt --upgrade
 - python setup.py install
 script:
-- py.test --muffin-app=example:app
+- coverage run --include=muffin_classy.py `which py.test` --muffin-app=example:app
+after_success:
+- coveralls
 env:
   global:
   - GH_REPO="ei-grad/muffin-classy"
